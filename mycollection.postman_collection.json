@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "5ad54640-a70d-4591-9a97-e6e7776f9eab",
+		"name": "mycollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4297472"
+	},
+	"item": [
+		{
+			"name": "getdata",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6Imd5YW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcyMTgxNTIwNn0.1Z3AhFuJHoBrWJJQia2nD362GKLR2dhFMyBvxlmsosQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:49156/api/Values/Getdata",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "49156",
+					"path": [
+						"api",
+						"Values",
+						"Getdata"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteData",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6Imd5YW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcyMTgxNTk3Mn0.50_zPHGEmkPD1RsuynqbXsLmwbQAev2tkptNRcWf218",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:49156/api/Values/DeleteData/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "49156",
+					"path": [
+						"api",
+						"Values",
+						"DeleteData",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tokenapi",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 0,\r\n  \"username\": \"gyan\",\r\n  \"password\": \"gyan\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:49156/api/Login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "49156",
+					"path": [
+						"api",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postData",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6Imd5YW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcyMTgxNzI3NX0.VgvrmWIbmrhP5CfAlRC-rDOusUaWzrvHNSy3B6hCZK4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \r\n  \"first_Name\": \"gyan1\",\r\n  \"last_Name\": \"gyan1\",\r\n  \"description\": \"gyan1\",\r\n  \"quantity\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:49156/api/Values/PostData",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "49156",
+					"path": [
+						"api",
+						"Values",
+						"PostData"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
